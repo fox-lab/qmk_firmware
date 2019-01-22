@@ -66,7 +66,7 @@
       KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO  }, /* F8-FF */ \
 }
 
-/* 
+/*
  *
  * ,--------------------------------------------------.           ,--------------------------------------------------.
  * | ESC    |   1  |   2  |   3  |   4  |   5  |  -   |           |  =   |   6  |   7  |   8  |   9  |   0  |  Bsp   |
@@ -80,26 +80,26 @@
  *   | Ctrl | Super|  Alt |                                                                   | Left |  Down| Right |
  *   `--------------------'                                                                   `--------------------'
  *                                        ,------|------.       ,---------------.
- *                                        |      | PgUp |       | Home |        |  
- *                                        | Space|------|       |------|  Enter | 
- *                                        |      | PgDn |       | End  |        | 
+ *                                        |      | PgUp |       | Home |        |
+ *                                        | Space|------|       |------|  Enter |
+ *                                        |      | PgDn |       | End  |        |
  *                                        `-------------'       `---------------'
  */
 #define KEYMAP( \
-    K1E, K1F, K30, K2F, K45, K3B, KE6,          KE2, K3A, K39, K14, K04, K09, K07, \
-	K29, K15, K3C, K3D, K3E, K3F, K58,          K50, K2C, K11, K05, K55, K10, K06, \
-	K31, K5F, K5E, K61, K2A, K38,                    K4C, K57, K53, K5B, K5A, K08, \
-	K35, K5D, K17, K1B, K1A, K52, K56,         K51,  K4D, K23, K1C, K13, K2E, K0C, \
-	K5C, K0A, K0F,                                                  K36, K0E, K37, \
-                             KE4, K49,          K4B, KE0,                          \
-                                  KE5,          KE1\
+  K29,K1E,K1F,K20,K21,K22,K2D,    K2E,K23,K24,K25,K26,K27,K2A,\
+  K2B,K14,K1A,K08,K15,K17,K4B,    K2F,K1C,K18,K0C,K12,K13,K31,\
+  K39,K04,K16,K07,K09,K0A,        K0B,K0D,K0E,K0F,K33,K34,\
+  KE1,K1D,K1B,K06,K19,K05,K4E,    K30,K11,K10,K36,K37,K52,KE5,\
+  KE0,KE3,KE2,            K50,K51,K4F,\
+                K2C,K49,    K4A,K28,        \
+                KE6,K4C,    K4D,KE4         \
 ) KEYMAP_ALL( \
-            KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,                          \
-    K29,    K3A,K3B,K3C,K3D,K3E,K3F,KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,K45,                 KC_NO,KC_NO,KC_NO,  KC_NO, KC_NO, KC_NO, KC_NO,  KC_NO, \
-    K35,K1E,K1F,KC_NO,KC_NO,KC_NO,K23,KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,K2E,KC_NO, K2A,    K49,KC_NO,K4B,  K53,KC_NO,K55,K56,     KC_NO, KC_NO,  \
-    KC_NO,K14,K1A,K08,K15,K17,K1C,KC_NO,K0C,KC_NO,K13,K2F,K30,       K31,              K4C,K4D,KC_NO,  K5F,KC_NO,K61,K57,     KC_NO, KC_NO,  \
-    K39,K04,KC_NO,K07,K09,K0A,KC_NO,KC_NO,K0E,K0F,KC_NO,KC_NO,    KC_NO,    KC_NO,                     K5C,K5D,K5E,KC_NO,     KC_NO, KC_NO,  \
-    KE1,KC_NO, KC_NO,K1B,K06,KC_NO,K05,K11,K10,K36,K37,K38, KC_NO, KE5,                   K52,         KC_NO,K5A,K5B,KC_NO,   KC_NO, KC_NO,  \
-    KE0,KC_NO,KE2,KC_NO,KC_NO,K2C,KC_NO,KC_NO,KC_NO,KE6,KC_NO,KC_NO, KE4,             K50,K51,KC_NO,   KC_NO,    KC_NO,K58,   KC_NO, KC_NO   \
+            KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,                                              \
+    K29,    KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,      KC_NO,KC_NO,KC_NO,  KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,\
+    KC_NO,K1E,K1F,K20,K21,K22,K23,K24,K25,K26,K27,K2D,K2E,KC_NO,K2A,  K49,K4A,K4B,  KC_NO,KC_NO,KC_NO,KC_NO, KC_NO,KC_NO, \
+    K2B,K14,K1A,K08,K15,K17,K1C,K18,K0C,K12,K13,K2F,K30,    K31,  K4C,K4D,K4E,  KC_NO,KC_NO,KC_NO,KC_NO, KC_NO,KC_NO, \
+    K39,K04,K16,K07,K09,K0A,K0B,K0D,K0E,K0F,K33,K34,    KC_NO,K28,                KC_NO,KC_NO,KC_NO,KC_NO, KC_NO,KC_NO, \
+    KE1,KC_NO,K1D,K1B,K06,K19,K05,K11,K10,K36,K37,KC_NO,    KC_NO,KE5,      K52,      KC_NO,KC_NO,KC_NO,KC_NO, KC_NO,KC_NO, \
+    KE0,KE3,KE2,KC_NO,KC_NO,    K2C,    KC_NO,KC_NO,KC_NO,KE6,KC_NO,KC_NO,KE4,  K50,K51,K4F,  KC_NO,      KC_NO,KC_NO, KC_NO,KC_NO  \
 )
 #endif
